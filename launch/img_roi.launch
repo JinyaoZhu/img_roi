@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+
+  <node name="img_roi" pkg="img_roi" type="img_roi" output="log">
+    <remap from="/image_raw" to="/image_raw" />
+    <param name="mask_path" type="string" value="$(find img_roi)/mask.jpeg" />
+  </node>
+
+</launch>
+
